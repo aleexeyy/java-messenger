@@ -25,15 +25,7 @@ A simple, cross‑platform messenger application written in Java. It allows user
 
 ---
 
-## Screenshots
-
-> **Where to put screenshots:**  
-> - Create a folder `assets/images/` at the project root.  
-> - Name files meaningfully:  
->   - `logo.png`  
->   - `login_screen.png`  
->   - `registration_screen.png`  
->   - `chat_screen.png`  
+## Screenshots 
 
 1. **Login/Registration Screen**  
    ![Login](assets/images/login_screen.png)  
