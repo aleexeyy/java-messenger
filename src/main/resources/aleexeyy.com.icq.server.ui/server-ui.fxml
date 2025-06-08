@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="aleexeyy.com.icq.server.ui.ServerController"
+            style="-fx-background-color: #2b2b2b;">
+
+    <!-- Left: Start/Stop controls -->
+    <left>
+        <VBox spacing="10" style="-fx-padding:10; -fx-background-color:#1e1e1e;">
+            <Label text="Server UI"
+                   style="-fx-text-fill:white; -fx-font-size:16;" />
+            <Button fx:id="startServerButton"
+                    text="Start Server"
+                    onAction="#handleStartServer"
+                    style="-fx-background-color:#444; -fx-text-fill:white; -fx-cursor: hand;" />
+            <Button fx:id="stopServerButton"
+                    text="Stop Server"
+                    onAction="#handleStopServer"
+                    style="-fx-background-color:#444; -fx-text-fill:white; -fx-cursor: hand;" />
+        </VBox>
+    </left>
+
+    <!-- Center: Messages area -->
+    <center>
+        <VBox spacing="5" style="-fx-padding:10;">
+            <Label text="Messages" style="-fx-text-fill:white; -fx-font-size:14;" />
+            <ListView fx:id="messageListView"
+                      style="-fx-control-inner-background:#333; -fx-text-fill:white;" />
+        </VBox>
+    </center>
+
+    <!-- Right: Conversations list -->
+    <right>
+        <VBox spacing="5" style="-fx-padding:10; -fx-background-color:#1e1e1e;">
+            <Label text="Conversations" style="-fx-text-fill:white; -fx-font-size:14;" />
+            <ListView fx:id="conversationListView"
+                      style="-fx-control-inner-background:#333; -fx-text-fill:white;" />
+        </VBox>
+    </right>
+
+    <!-- Bottom: Status bar -->
+    <bottom>
+        <Label fx:id="statusLabel"
+               text="Server stopped"
+               style="-fx-text-fill:white; -fx-padding:5; -fx-background-color:#1e1e1e;" />
+    </bottom>
+</BorderPane>
